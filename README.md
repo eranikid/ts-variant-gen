@@ -35,7 +35,7 @@ generateFile("./src/errors/accountError.generated.ts", (file) => {
 ```json
 {
   "scripts": {
-    "gen-variants": "ts-variant-gen"
+    "gen-variants": "ts-variant-gen variants.ts"
   }
 }
 ```
