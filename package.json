@@ -1,7 +1,7 @@
 {
   "name": "ts-variant-gen",
   "version": "0.0.7",
-  "description": "",
+  "description": "Small utility to generate F#/Kotlin-style discriminated unions (variant types) for TypeScript projects",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "bin": {
