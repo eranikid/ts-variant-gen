@@ -24,7 +24,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
