@@ -1,11 +1,11 @@
 {
   "name": "ts-variant-gen",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "bin": {
-    "ts-variant-gen": "./bin/ts-variant-gen"
+    "ts-variant-gen": "bin/ts-variant-gen"
   },
   "license": "MIT",
   "keywords": [
