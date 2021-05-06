@@ -44,8 +44,8 @@ export const UsernameError = {
 		maxLength,
 		actualLength
 	}),
-	isTooShort: (v: any): v is UsernameError_TooShort => "_t" in v && v._t === UsernameError_TooShort_Discriminator,
-	isTooLong: (v: any): v is UsernameError_TooLong => "_t" in v && v._t === UsernameError_TooLong_Discriminator
+	isTooShort: (v: any): v is UsernameError_TooShort => v !== null && typeof v === "object" && "_t" in v && v._t === UsernameError_TooShort_Discriminator,
+	isTooLong: (v: any): v is UsernameError_TooLong => v !== null && typeof v === "object" && "_t" in v && v._t === UsernameError_TooLong_Discriminator
 }`;
 
     expect(generatedSource).toBe(expectedSource);

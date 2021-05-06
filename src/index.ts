@@ -112,7 +112,7 @@ const generateGuards = (typeName: string, variants: Variant[]): string =>
   variants
     .map(
       (v) =>
-        `\tis${v.name}: (v: any): v is ${typeName}_${v.name} => "_t" in v && v._t === ${typeName}_${v.name}_Discriminator`
+        `\tis${v.name}: (v: any): v is ${typeName}_${v.name} => v !== null && typeof v === "object" && "_t" in v && v._t === ${typeName}_${v.name}_Discriminator`
     )
     .join(",\n");
 
